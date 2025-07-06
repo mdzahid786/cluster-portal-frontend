@@ -6,7 +6,7 @@ import Login from "../components/Login";
 function Guest() {
   return (
     <>
-      <nav className="navbar navbar-expand-sm navbar-dark bg-dark ">
+      <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
         <div className="container-fluid">
           <ul className="navbar-nav">
             <li className="nav-item">
