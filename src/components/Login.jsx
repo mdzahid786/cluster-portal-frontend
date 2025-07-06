@@ -16,8 +16,6 @@ export default function Login() {
       const basicAuth = btoa(`${username}:${password}`);
       http
         .get("/login", {
-          username: username,
-          password: password,
           headers: { Authorization: `Basic ${basicAuth}` },
         })
         .then((res) => {
