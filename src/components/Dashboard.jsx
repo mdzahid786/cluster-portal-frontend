@@ -10,9 +10,9 @@ export default function Dashboard() {
 
   useEffect(() => {
     setUser(getUser());
-    fetchUserDetails();
+    fetchClustersDetails();
   }, []);
-  const fetchUserDetails = () => {
+  const fetchClustersDetails = () => {
     http.get("/clusters/").then((res) => {
       setClusters(res.data);
     });
